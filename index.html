@@ -327,7 +327,6 @@
       .pills { display: flex; flex-wrap: wrap; gap: 9px; }
       .pill { padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink); font: inherit; font-size: 0.92rem; font-weight: 500; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
       .pill[aria-pressed="true"] { background: var(--maroon-700); border-color: var(--maroon-700); color: #fdf3dd; }
-      .bot-field { display: none !important; }
       .btn[disabled] { opacity: 0.6; cursor: wait; }
       .rsvp-error { display: none; margin: 0; padding: 14px 16px; border: 1px solid #b3352c; background: color-mix(in srgb, #b3352c 7%, var(--card)); color: var(--ink); font-size: 0.96rem; }
       .rsvp-error.show { display: block; }
@@ -569,7 +568,7 @@
             <div class="ev-dress">
               <span class="lab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 3.5 4.6 5.3 5.8 20.5h12.4l1.2-15.2-3.9-1.8L12 9 8.5 3.5Z" /><path d="M12 9v11.5" /><path d="M12 9l-1.1 2.8L12 19.4l1.1-7.6L12 9Z" /></svg>Dress Mood</span>
               <strong>Suits &amp; western wear · black, blue or green</strong>
-              <span class="dress-note">Don&rsquo;t shy away from shimmer &mdash; wear something glittery or metallic if you like.</span>
+              <span class="dress-note">Don&rsquo;t shy away from shimmer &mdash; wear something glittery if you like.</span>
               <div class="swatches" aria-label="Suggested colours: black, deep blue and emerald green">
                 <span class="swatch" style="background:#101113"></span><span class="swatch" style="background:#194c78"></span><span class="swatch" style="background:#1d6c59"></span>
               </div>
@@ -658,14 +657,10 @@
         </div>
         <p class="section-lede rv">Tell us you're coming — fill this in and tap send, and your reply comes straight to us. We are ready to welcome you, and the celebrations won't be the same without you.</p>
         <div class="rsvp-wrap rv rv-zoom">
-          <form class="rsvp-form" id="rsvp-form" action="https://api.web3forms.com/submit" method="POST" novalidate>
-            <input type="hidden" name="access_key" value="83e2628b-200a-43b6-9f08-0783c579e9c5" />
-            <input type="hidden" name="subject" value="New RSVP — Reetik &amp; Isha's wedding" />
-            <input type="hidden" name="events" id="rsvp-events-field" value="All events" />
-            <input type="checkbox" name="botcheck" class="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <form class="rsvp-form" id="rsvp-form" novalidate>
             <div class="field" id="f-name">
               <label for="rsvp-name">Your name</label>
-              <input type="text" id="rsvp-name" name="from_name" autocomplete="name" placeholder="e.g. Aarav Sharma" />
+              <input type="text" id="rsvp-name" name="name" autocomplete="name" placeholder="e.g. Aarav Sharma" />
               <p class="err">Please tell us your name so we can find you on the list.</p>
             </div>
             <div class="field" id="f-phone">
@@ -676,11 +671,11 @@
             <div class="field">
               <label id="ev-label">Celebrations you'll attend</label>
               <div class="pills" role="group" aria-labelledby="ev-label">
-                <button type="button" class="pill" data-ev="All events" aria-pressed="true">All events</button>
-                <button type="button" class="pill" data-ev="Shagun Ki Subah (Tilak &amp; Godbharai, 17 Jan)" aria-pressed="false">Shagun Ki Subah · Tilak &amp; Godbharai, 17 Jan</button>
-                <button type="button" class="pill" data-ev="Jashn Ki Raat (Sangeet, 17 Jan)" aria-pressed="false">Jashn Ki Raat · Sangeet, 17 Jan</button>
-                <button type="button" class="pill" data-ev="Rangon Ki Bahar (Haldi, 18 Jan)" aria-pressed="false">Rangon Ki Bahar · Haldi, 18 Jan</button>
-                <button type="button" class="pill" data-ev="Rasm-e-Ishq (Wedding, 18 Jan)" aria-pressed="false">Rasm-e-Ishq · Wedding, 18 Jan</button>
+                <button type="button" class="pill" data-ev="All events" data-gform="All events (17–18 Jan)" aria-pressed="true">All events</button>
+                <button type="button" class="pill" data-ev="Shagun Ki Subah (Tilak &amp; Godbharai, 17 Jan)" data-gform="Shagun Ki Subah — Tilak &amp; Godbharai (17 Jan, noon)" aria-pressed="false">Shagun Ki Subah · Tilak &amp; Godbharai, 17 Jan</button>
+                <button type="button" class="pill" data-ev="Jashn Ki Raat (Sangeet, 17 Jan)" data-gform="Jashn Ki Raat — Sangeet (17 Jan, 7 PM)" aria-pressed="false">Jashn Ki Raat · Sangeet, 17 Jan</button>
+                <button type="button" class="pill" data-ev="Rangon Ki Bahar (Haldi, 18 Jan)" data-gform="Rangon Ki Bahar — Haldi (18 Jan, noon)" aria-pressed="false">Rangon Ki Bahar · Haldi, 18 Jan</button>
+                <button type="button" class="pill" data-ev="Rasm-e-Ishq (Wedding, 18 Jan)" data-gform="Rasm-e-Ishq — Wedding Ceremony (18 Jan, 7 PM)" aria-pressed="false">Rasm-e-Ishq · Wedding, 18 Jan</button>
               </div>
             </div>
             <div class="field">
@@ -1017,33 +1012,31 @@
           var guestsVal = parseInt(document.getElementById("rsvp-guests").value, 10);
           if (isNaN(guestsVal) || guestsVal < 1) guestsVal = 1;
           var events = pills.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })
-            .map(function (b) { return b.getAttribute("data-ev"); });
-          /* Delivery: a single fetch with mode "no-cors" carrying the
-             form's fields as multipart form data. The hidden access_key,
-             subject and events inputs ride along automatically; the
-             botcheck honeypot stays unchecked, so it is left out of the
-             submission entirely (never truthy). no-cors makes the
-             response opaque — that is expected and fine: the response is
-             never read, parsed, or branched on. Web3Forms still
-             processes the POST and emails the RSVP, and a fulfilled
-             promise means the request left the device, so the thank-you
-             shows at once. no-cors also sidesteps every CORS, preflight
-             and response-format failure mode. If the fetch rejects —
-             a network-level failure, e.g. the API host is blocked on
-             the guest's device — the guest gets a visible message and
-             the Send button is restored to its normal state so they
-             can try again. No native form submit and no frame
-             navigation is attempted anywhere in this flow, so the
-             button can never hang on an intermediate label: every
-             path ends in the thank-you or the retry message. */
-          var eventsText = events.join(", ");
-          document.getElementById("rsvp-events-field").value = eventsText;
-          var fd = new FormData(form);
-          fd.set("from_name", name);
-          fd.set("phone", phone);
-          fd.set("guests", String(guestsVal));
-          fd.set("message", document.getElementById("rsvp-note").value.trim());
-          fd.set("events", eventsText);
+            .map(function (b) { return b.getAttribute("data-gform"); });
+          /* Delivery: a single fetch with mode "no-cors" posting the
+             answers to the RSVP Google Form's formResponse endpoint —
+             one entry per field, and one repeated events entry per
+             selected celebration, using the form's exact checkbox
+             labels. no-cors makes the response opaque — that is
+             expected and fine: the response is never read, parsed, or
+             branched on. Google records the submission, and a
+             fulfilled promise means the request left the device, so
+             the thank-you shows at once. no-cors also sidesteps every
+             CORS, preflight and response-format failure mode. If the
+             fetch rejects — a network-level failure, e.g. the form
+             host is blocked on the guest's device — the guest gets a
+             visible message and the Send button is restored to its
+             normal state so they can try again. No native form submit
+             and no frame navigation is attempted anywhere in this
+             flow, so the button can never hang on an intermediate
+             label: every path ends in the thank-you or the retry
+             message. */
+          var fd = new FormData();
+          fd.append("entry.780059920", name);
+          fd.append("entry.1122990202", phone);
+          fd.append("entry.608747210", String(guestsVal));
+          fd.append("entry.894284347", document.getElementById("rsvp-note").value.trim());
+          events.forEach(function (label) { fd.append("entry.1231433727", label); });
           submitBtn.disabled = true;
           submitBtn.textContent = "Sending…";
 
@@ -1064,7 +1057,7 @@
             ok.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "center" });
           }
           if (!window.fetch) { showSendError(); return; }
-          fetch("https://api.web3forms.com/submit", {
+          fetch("https://docs.google.com/forms/d/e/1FAIpQLSdrFiccLZSAVhJBVsqieK6u2b1m39BJE1OAPpfp7xRVlfjVCw/formResponse", {
             method: "POST",
             mode: "no-cors",
             body: fd
