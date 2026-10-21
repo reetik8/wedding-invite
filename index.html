@@ -4,57 +4,57 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#4a0e1c" />
+    <meta name="theme-color" content="#3d0b11" />
     <link rel="icon" href="data:," />
     <title>Reetik &amp; Isha — 17 · 18 January 2027, Lucknow</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Jost:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+Devanagari:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
         color-scheme: light dark;
-        --maroon-950: #2e0812;
-        --maroon-900: #420c1b;
-        --maroon-800: #571226;
-        --maroon-700: #6d1830;
-        --gold-300: #eed9a0;
-        --gold-400: #dfc078;
-        --gold-500: #c79b45;
-        --gold-600: #a67c2e;
-        --paper: #faf2e3;
-        --paper-2: #f3e7cf;
-        --ink: #3a1d20;
-        --ink-soft: #6d4c47;
-        --line: rgba(140, 96, 40, 0.28);
-        --card: #fffaf0;
-        --shadow: 0 30px 70px rgba(74, 20, 28, 0.18);
-        --pastel-bg: #f6e7d7;
-        --pastel-ink: #472b28;
-        --night-bg: #0a3d2b;
+        --maroon-950: #2a060b;
+        --maroon-900: #3d0b11;
+        --maroon-800: #4c1219;
+        --maroon-700: #5f1822;
+        --gold-300: #d9bc7f;
+        --gold-400: #be9250;
+        --gold-500: #a27437;
+        --gold-600: #7c581f;
+        --paper: #faf3e6;
+        --paper-2: #f3e8d2;
+        --ink: #3d1418;
+        --ink-soft: #71504a;
+        --line: rgba(162, 116, 55, 0.3);
+        --card: #fffbf2;
+        --shadow: 0 30px 70px rgba(61, 11, 17, 0.18);
+        --pastel-bg: #f8e4d2;
+        --pastel-ink: #4a2a24;
+        --night-bg: #073723;
         --night-ink: #eef3f6;
-        --haldi-bg: #f5e0a0;
-        --haldi-ink: #38260a;
-        --wedding-bg: #5c1223;
-        --wedding-ink: #ffefd8;
+        --haldi-bg: #efa92c;
+        --haldi-ink: #3f2703;
+        --wedding-bg: #410c11;
+        --wedding-ink: #f7e8ce;
         --veg: #1c7a37;
       }
       @media (prefers-color-scheme: dark) {
         :root {
-          --paper: #1d0d10;
-          --paper-2: #281216;
+          --paper: #20080c;
+          --paper-2: #2a0d12;
           --ink: #f4e7d2;
           --ink-soft: #cdb09b;
-          --line: rgba(223, 192, 120, 0.3);
-          --card: #2b1418;
+          --line: rgba(190, 146, 80, 0.32);
+          --card: #2e1015;
           --shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
-          --pastel-bg: #4b3532;
+          --pastel-bg: #4a322c;
           --pastel-ink: #ffeee0;
-          --haldi-bg: #c99a1d;
-          --haldi-ink: #221503;
-          --wedding-bg: #4c0f1f;
+          --haldi-bg: #a86e14;
+          --haldi-ink: #fff3d6;
+          --wedding-bg: #33090e;
         }
       }
       * { box-sizing: border-box; }
@@ -64,20 +64,21 @@
         min-width: 280px;
         overflow-x: hidden;
         background:
-          radial-gradient(1100px 480px at 50% -120px, rgba(199, 155, 69, 0.14), transparent 65%),
+          radial-gradient(1100px 480px at 50% -120px, rgba(162, 116, 55, 0.13), transparent 65%),
           var(--paper);
         color: var(--ink);
-        font-family: "Jost", system-ui, sans-serif;
-        font-size: 17.5px;
-        line-height: 1.6;
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-size: 19.5px;
+        font-weight: 500;
+        line-height: 1.55;
       }
-      ::selection { background: var(--gold-400); color: var(--maroon-950); }
+      ::selection { background: var(--gold-300); color: var(--maroon-950); }
       h1, h2, h3 { font-family: "Cormorant Garamond", serif; margin-top: 0; }
       p { margin-top: 0; }
       img, svg { display: block; max-width: 100%; }
       a { color: inherit; }
       button, a { -webkit-tap-highlight-color: transparent; }
-      section { scroll-margin-top: 84px; }
+      section { scroll-margin-top: 24px; }
       .hindi { font-family: "Noto Sans Devanagari", sans-serif; line-height: 1.75; }
 
       #petals { position: fixed; inset: 0; z-index: 60; pointer-events: none; }
@@ -92,99 +93,78 @@
       .shell { width: min(1140px, calc(100% - 40px)); margin-inline: auto; }
       main.shell { padding-bottom: clamp(76px, 11vw, 120px); }
 
-      /* ---------- nav ---------- */
-      .nav {
-        position: sticky; top: 0; z-index: 50;
-        display: flex; justify-content: center; gap: clamp(10px, 4vw, 38px); flex-wrap: wrap;
-        padding: 13px 16px;
-        background: color-mix(in srgb, var(--paper) 88%, transparent);
-        backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-        border-bottom: 1px solid var(--line);
-      }
-      .nav a {
-        color: var(--ink-soft); text-decoration: none; font-size: 0.82rem; font-weight: 600;
-        letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 2px;
-        border-bottom: 1px solid transparent; transition: color 0.25s, border-color 0.25s;
-      }
-      .nav a:hover, .nav a:focus-visible { color: var(--maroon-700); border-color: var(--gold-500); }
-      @media (prefers-color-scheme: dark) { .nav a:hover, .nav a:focus-visible { color: var(--gold-300); } }
-
       /* ---------- hero ---------- */
       .hero {
         position: relative; overflow: hidden; text-align: center;
         margin-top: 26px; padding: clamp(56px, 9vw, 104px) clamp(22px, 6vw, 80px) clamp(64px, 9vw, 110px);
         background:
-          radial-gradient(720px 340px at 50% -60px, rgba(238, 217, 160, 0.22), transparent 62%),
+          radial-gradient(720px 340px at 50% -60px, rgba(217, 188, 127, 0.2), transparent 62%),
           radial-gradient(900px 600px at 50% 118%, rgba(0, 0, 0, 0.35), transparent 60%),
           linear-gradient(168deg, var(--maroon-700), var(--maroon-900) 52%, var(--maroon-950));
         color: #fdf3dd;
         border: 1px solid var(--gold-500);
-        box-shadow: var(--shadow), inset 0 0 0 10px var(--maroon-900), inset 0 0 0 11px rgba(223, 192, 120, 0.55);
+        box-shadow: var(--shadow), inset 0 0 0 10px var(--maroon-900), inset 0 0 0 11px rgba(190, 146, 80, 0.55);
       }
       .hero-arch {
         position: absolute; left: 50%; top: 26px; transform: translateX(-50%);
         width: min(620px, 86%); height: 340px; pointer-events: none; opacity: 0.5;
-        border: 1px solid rgba(223, 192, 120, 0.4); border-bottom: 0;
+        border: 1px solid rgba(190, 146, 80, 0.4); border-bottom: 0;
         border-radius: 310px 310px 0 0;
-        box-shadow: 0 0 0 14px rgba(223, 192, 120, 0.05), inset 0 0 60px rgba(238, 217, 160, 0.06);
+        box-shadow: 0 0 0 14px rgba(190, 146, 80, 0.05), inset 0 0 60px rgba(217, 188, 127, 0.06);
       }
       .hero-glow {
         position: absolute; left: 50%; top: 118px; width: 340px; height: 340px; pointer-events: none;
         transform: translateX(-50%); border-radius: 50%;
-        background: radial-gradient(circle, rgba(238, 217, 160, 0.28), transparent 65%);
+        background: radial-gradient(circle, rgba(217, 188, 127, 0.26), transparent 65%);
         animation: glowPulse 5.5s ease-in-out infinite;
       }
       @keyframes glowPulse { 0%, 100% { opacity: 0.55; transform: translateX(-50%) scale(0.94); } 50% { opacity: 1; transform: translateX(-50%) scale(1.06); } }
       .medallion {
-        position: relative; width: 118px; height: 118px; margin: 0 auto 22px;
-        display: grid; place-items: center; border-radius: 50%;
-        border: 1px solid var(--gold-400);
-        box-shadow: 0 0 0 7px rgba(223, 192, 120, 0.12), 0 0 44px rgba(238, 217, 160, 0.35);
-        background: radial-gradient(circle at 50% 38%, rgba(238, 217, 160, 0.16), rgba(0, 0, 0, 0.18));
+        position: relative; width: 188px; margin: 0 auto 26px;
         animation: medallionFloat 7s ease-in-out infinite;
+        filter: drop-shadow(0 0 24px rgba(217, 188, 127, 0.28));
       }
       @keyframes medallionFloat { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
-      .medallion svg { width: 78px; height: 78px; color: var(--gold-300); }
+      .medallion svg { width: 100%; height: auto; color: var(--gold-400); }
       .shubh {
         position: relative; margin-bottom: 10px;
-        color: var(--gold-300); font-size: 0.86rem; font-weight: 600; letter-spacing: 0.52em; text-transform: uppercase;
-        text-indent: 0.52em;
+        color: var(--gold-300); font-family: "Cormorant Garamond", serif; font-size: 1.35rem; font-weight: 600; font-style: italic; letter-spacing: 0.05em;
       }
       .hero-blessing { position: relative; max-width: 560px; margin: 0 auto 8px; color: #efdcb2; font-family: "Cormorant Garamond", serif; font-size: clamp(1.2rem, 2.6vw, 1.45rem); font-style: italic; }
-      .hero-names { position: relative; margin: 10px 0 4px; font-family: "Great Vibes", cursive; font-weight: 400; font-size: clamp(4.2rem, 13vw, 8.2rem); line-height: 1.12; color: #fbeecb; text-shadow: 0 4px 34px rgba(238, 217, 160, 0.35); }
+      .hero-names { position: relative; margin: 10px 0 4px; font-family: "Great Vibes", cursive; font-weight: 400; font-size: clamp(4.2rem, 13vw, 8.2rem); line-height: 1.12; color: #fbeecb; text-shadow: 0 4px 34px rgba(217, 188, 127, 0.35); }
       .hero-names .amp { display: inline-block; margin-inline: 0.08em; font-size: 0.52em; color: var(--gold-400); vertical-align: 0.32em; }
       .hero-rule { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 20px auto 22px; color: var(--gold-400); }
       .hero-rule::before, .hero-rule::after { content: ""; width: min(150px, 26vw); height: 1px; background: linear-gradient(90deg, transparent, var(--gold-400)); }
       .hero-rule::after { background: linear-gradient(90deg, var(--gold-400), transparent); }
-      .hero-rule .dia { width: 8px; height: 8px; background: var(--gold-400); transform: rotate(45deg); box-shadow: 0 0 12px rgba(238, 217, 160, 0.8); }
-      .hero-dates { position: relative; font-family: "Cormorant Garamond", serif; font-size: clamp(1.9rem, 5.4vw, 3rem); font-weight: 600; letter-spacing: 0.14em; color: #fff6e0; }
+      .hero-rule .dia { width: 8px; height: 8px; background: var(--gold-400); transform: rotate(45deg); box-shadow: 0 0 12px rgba(217, 188, 127, 0.8); }
+      .hero-dates { position: relative; font-family: "Cormorant Garamond", serif; font-size: clamp(1.9rem, 5.4vw, 3rem); font-weight: 600; letter-spacing: 0.08em; color: #fff6e0; }
       .hero-dates .dot { color: var(--gold-400); margin-inline: 0.14em; }
-      .hero-month { position: relative; margin-top: 4px; color: var(--gold-300); font-size: 0.92rem; font-weight: 600; letter-spacing: 0.44em; text-transform: uppercase; text-indent: 0.44em; }
-      .hero-venue { position: relative; margin-top: 26px; color: #e9d9b8; font-size: 1.02rem; }
-      .hero-venue strong { font-family: "Cormorant Garamond", serif; font-size: 1.4rem; color: #fdf3dd; }
-      .scroll-hint { position: relative; margin-top: 44px; color: rgba(253, 243, 221, 0.65); font-size: 0.78rem; letter-spacing: 0.3em; text-transform: uppercase; text-indent: 0.3em; }
+      .hero-month { position: relative; margin-top: 4px; color: var(--gold-300); font-family: "Cormorant Garamond", serif; font-size: 1.3rem; font-weight: 600; font-style: italic; letter-spacing: 0.05em; }
+      .hero-venue { position: relative; margin-top: 26px; color: #e9d9b8; font-size: 1.08rem; }
+      .hero-venue strong { font-family: "Cormorant Garamond", serif; font-size: 1.45rem; color: #fdf3dd; }
+      .scroll-hint { position: relative; margin-top: 44px; color: rgba(253, 243, 221, 0.68); font-family: "Jost", sans-serif; font-size: 0.82rem; letter-spacing: 0.14em; }
       .scroll-hint::after { content: ""; display: block; width: 1px; height: 42px; margin: 12px auto 0; background: linear-gradient(var(--gold-400), transparent); animation: drip 2.6s ease-in-out infinite; }
       @keyframes drip { 0% { transform: scaleY(0.3); transform-origin: top; opacity: 0.4; } 55% { transform: scaleY(1); opacity: 1; } 100% { transform: scaleY(1); opacity: 0.25; } }
 
       /* ---------- countdown ---------- */
       .countdown { position: relative; margin-top: 54px; text-align: center; }
-      .countdown-glow { position: absolute; left: 50%; top: 54%; width: min(680px, 92%); height: 210px; transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none; background: radial-gradient(ellipse, rgba(199, 155, 69, 0.22), transparent 68%); animation: glowPulse 6s ease-in-out infinite; }
-      .countdown h2 { position: relative; margin-bottom: 4px; color: var(--maroon-700); font-size: clamp(2rem, 4.6vw, 2.9rem); font-weight: 600; }
+      .countdown-glow { position: absolute; left: 50%; top: 54%; width: min(680px, 92%); height: 210px; transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none; background: radial-gradient(ellipse, rgba(162, 116, 55, 0.2), transparent 68%); animation: glowPulse 6s ease-in-out infinite; }
+      .countdown h2 { position: relative; margin-bottom: 4px; color: var(--maroon-700); font-size: clamp(2rem, 4.6vw, 2.9rem); font-weight: 600; font-style: italic; }
       @media (prefers-color-scheme: dark) { .countdown h2 { color: var(--gold-300); } }
-      .countdown-sub { position: relative; margin-bottom: 28px; color: var(--ink-soft); }
+      .countdown-sub { position: relative; margin-bottom: 28px; color: var(--ink-soft); font-style: italic; font-size: 1.08rem; }
       .countdown-grid { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(10px, 2.4vw, 20px); max-width: 720px; margin-inline: auto; }
-      .count-unit { padding: 22px 6px 16px; background: var(--card); border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(74, 20, 28, 0.08); }
+      .count-unit { padding: 22px 6px 16px; background: var(--card); border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(61, 11, 17, 0.08); }
       .count-num { display: block; font-family: "Cormorant Garamond", serif; font-size: clamp(2.3rem, 6.4vw, 3.6rem); font-weight: 700; line-height: 1; color: var(--maroon-700); font-variant-numeric: tabular-nums; }
       @media (prefers-color-scheme: dark) { .count-num { color: var(--gold-300); } }
-      .count-lab { display: block; margin-top: 9px; color: var(--ink-soft); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; }
+      .count-lab { display: block; margin-top: 9px; color: var(--ink-soft); font-family: "Jost", sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.1em; }
 
       /* ---------- sections ---------- */
       .section { padding: clamp(76px, 11vw, 124px) 0 0; }
-      .kicker { text-align: center; margin-bottom: 10px; color: var(--gold-600); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.34em; text-transform: uppercase; text-indent: 0.34em; }
+      .kicker { text-align: center; margin-bottom: 10px; color: var(--gold-600); font-family: "Cormorant Garamond", serif; font-size: 1.18rem; font-weight: 600; font-style: italic; letter-spacing: 0.03em; }
       @media (prefers-color-scheme: dark) { .kicker { color: var(--gold-400); } }
-      .section-title { text-align: center; margin-bottom: 16px; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 600; line-height: 1.02; color: var(--maroon-800); }
+      .section-title { text-align: center; margin-bottom: 16px; font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 600; line-height: 1.05; color: var(--maroon-800); }
       @media (prefers-color-scheme: dark) { .section-title { color: var(--gold-300); } }
-      .section-lede { max-width: 640px; margin: 0 auto 46px; text-align: center; color: var(--ink-soft); font-size: 1.06rem; }
+      .section-lede { max-width: 640px; margin: 0 auto 46px; text-align: center; color: var(--ink-soft); font-size: 1.14rem; font-style: italic; }
       .flourish { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 0 auto 40px; color: var(--gold-500); }
       .flourish::before, .flourish::after { content: ""; width: min(120px, 24vw); height: 1px; background: linear-gradient(90deg, transparent, var(--gold-500)); }
       .flourish::after { background: linear-gradient(90deg, var(--gold-500), transparent); }
@@ -192,22 +172,22 @@
 
       /* ---------- families & photos ---------- */
       .family-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(18px, 3.4vw, 34px); }
-      .family-card { padding: clamp(26px, 4vw, 40px); background: var(--card); border: 1px solid var(--line); box-shadow: 0 18px 44px rgba(74, 20, 28, 0.07); text-align: center; }
-      .family-card .who { margin-bottom: 4px; color: var(--gold-600); font-size: 0.76rem; font-weight: 600; letter-spacing: 0.26em; text-transform: uppercase; }
+      .family-card { padding: clamp(26px, 4vw, 40px); background: var(--card); border: 1px solid var(--line); box-shadow: 0 18px 44px rgba(61, 11, 17, 0.07); text-align: center; }
+      .family-card .who { margin-bottom: 4px; color: var(--gold-600); font-family: "Cormorant Garamond", serif; font-size: 1.05rem; font-weight: 600; font-style: italic; letter-spacing: 0.03em; }
       @media (prefers-color-scheme: dark) { .family-card .who { color: var(--gold-400); } }
       .family-card h3 { margin-bottom: 14px; font-size: clamp(1.7rem, 3.4vw, 2.2rem); font-weight: 600; color: var(--maroon-800); }
       @media (prefers-color-scheme: dark) { .family-card h3 { color: var(--gold-300); } }
       .family-card p { margin-bottom: 6px; color: var(--ink-soft); }
       .family-card p strong { color: var(--ink); font-weight: 600; }
       .photo-row { display: grid; grid-template-columns: minmax(0, 640px); justify-content: center; gap: clamp(16px, 3vw, 30px); margin-top: clamp(22px, 4vw, 38px); align-items: stretch; }
-      .photo-frame { position: relative; padding: 12px; border: 1px solid var(--gold-500); background: var(--card); box-shadow: 0 18px 44px rgba(74, 20, 28, 0.1); }
+      .photo-frame { position: relative; padding: 12px; border: 1px solid var(--gold-500); background: var(--card); box-shadow: 0 18px 44px rgba(61, 11, 17, 0.1); }
       .photo-frame::before { content: ""; position: absolute; inset: 5px; border: 1px solid var(--line); pointer-events: none; }
-      .photo-inner { position: relative; height: 100%; min-height: 250px; display: grid; place-items: center; padding: 26px 18px; text-align: center; background: radial-gradient(circle at 50% 34%, rgba(199, 155, 69, 0.14), transparent 60%), var(--paper-2); }
+      .photo-inner { position: relative; height: 100%; min-height: 250px; display: grid; place-items: center; padding: 26px 18px; text-align: center; background: radial-gradient(circle at 50% 34%, rgba(162, 116, 55, 0.14), transparent 60%), var(--paper-2); }
       .photo-frame.tall .photo-inner { min-height: 330px; }
       .photo-mono { font-family: "Great Vibes", cursive; font-size: clamp(2.6rem, 6vw, 3.6rem); color: var(--maroon-700); line-height: 1; }
       @media (prefers-color-scheme: dark) { .photo-mono { color: var(--gold-300); } }
       .photo-inner .cap { margin-top: 14px; font-family: "Cormorant Garamond", serif; font-size: 1.18rem; font-weight: 600; color: var(--ink); }
-      .photo-inner .soon { margin-top: 4px; color: var(--ink-soft); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; }
+      .photo-inner .soon { margin-top: 4px; color: var(--ink-soft); font-family: "Jost", sans-serif; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.08em; }
       .corner { position: absolute; width: 26px; height: 26px; color: var(--gold-500); }
       .corner.tl { top: -2px; left: -2px; } .corner.tr { top: -2px; right: -2px; transform: scaleX(-1); }
       .corner.bl { bottom: -2px; left: -2px; transform: scaleY(-1); } .corner.br { bottom: -2px; right: -2px; transform: scale(-1); }
@@ -218,28 +198,29 @@
       .event::before { content: ""; position: absolute; inset: 9px; border: 1px solid color-mix(in srgb, var(--ev-ink) 26%, transparent); pointer-events: none; }
       .event::after { content: ""; position: absolute; top: 0; bottom: 0; width: 90px; left: -130px; transform: skewX(-18deg); background: linear-gradient(90deg, transparent, rgba(255, 240, 200, 0.16), transparent); animation: sheen 9s ease-in-out infinite; pointer-events: none; }
       @keyframes sheen { 0%, 55% { left: -130px; } 85%, 100% { left: 112%; } }
-      .event-pastel { --ev-bg: var(--pastel-bg); --ev-ink: var(--pastel-ink); }
-      .event-sangeet { --ev-bg: var(--night-bg); --ev-ink: var(--night-ink); background: linear-gradient(155deg, #126049 0%, #0a3d2b 55%, #052a1e 100%); }
-      .event-haldi { --ev-bg: var(--haldi-bg); --ev-ink: var(--haldi-ink); background: linear-gradient(155deg, #fbf1cf 0%, #f6e2a2 52%, #eec96e 100%); }
-      @media (prefers-color-scheme: dark) { .event-haldi { background: linear-gradient(155deg, #a87f1e 0%, #c99a1d 55%, #dbb038 100%); } }
-      .event-wedding { --ev-bg: var(--wedding-bg); --ev-ink: var(--wedding-ink); }
+      .event-pastel { --ev-bg: var(--pastel-bg); --ev-ink: var(--pastel-ink); background: linear-gradient(155deg, #fceee0 0%, #f8e0cb 55%, #f2d2b4 100%); }
+      @media (prefers-color-scheme: dark) { .event-pastel { background: var(--pastel-bg); } }
+      .event-sangeet { --ev-bg: var(--night-bg); --ev-ink: var(--night-ink); background: linear-gradient(155deg, #0e5a3c 0%, #073723 55%, #04241a 100%); }
+      .event-haldi { --ev-bg: var(--haldi-bg); --ev-ink: var(--haldi-ink); background: linear-gradient(155deg, #f8cf5a 0%, #f0a52e 52%, #e8890c 100%); }
+      @media (prefers-color-scheme: dark) { .event-haldi { background: linear-gradient(155deg, #c07f16 0%, #a86e14 55%, #8f5c0e 100%); } }
+      .event-wedding { --ev-bg: var(--wedding-bg); --ev-ink: var(--wedding-ink); background: linear-gradient(155deg, #57151d 0%, #410c11 55%, #2a060b 100%); }
       .ev-date { position: relative; display: grid; align-content: center; justify-items: center; gap: 2px; padding: 34px 16px; text-align: center; border-right: 1px solid color-mix(in srgb, var(--ev-ink) 24%, transparent); }
       .ev-arch { width: 104px; padding: 18px 0 13px; border: 1px solid color-mix(in srgb, var(--ev-ink) 45%, transparent); border-radius: 60px 60px 6px 6px; background: color-mix(in srgb, var(--ev-ink) 7%, transparent); }
       .ev-day-num { font-family: "Cormorant Garamond", serif; font-size: 3.4rem; font-weight: 700; line-height: 0.85; }
-      .ev-mon { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.3em; text-transform: uppercase; text-indent: 0.3em; }
-      .ev-when { margin-top: 14px; font-size: 0.92rem; opacity: 0.85; line-height: 1.45; }
-      .ev-when strong { display: block; font-family: "Cormorant Garamond", serif; font-size: 1.22rem; font-weight: 600; }
+      .ev-mon { font-family: "Cormorant Garamond", serif; font-size: 1rem; font-weight: 600; font-style: italic; letter-spacing: 0.06em; }
+      .ev-when { margin-top: 14px; font-size: 1rem; opacity: 0.85; line-height: 1.45; }
+      .ev-when strong { display: block; font-family: "Cormorant Garamond", serif; font-size: 1.28rem; font-weight: 600; }
       .ev-body { position: relative; padding: clamp(28px, 4.4vw, 46px) clamp(24px, 4.4vw, 50px); }
-      .ev-kicker { margin-bottom: 6px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.28em; text-transform: uppercase; opacity: 0.75; }
+      .ev-kicker { margin-bottom: 6px; font-family: "Cormorant Garamond", serif; font-size: 1.12rem; font-weight: 600; font-style: italic; letter-spacing: 0.02em; opacity: 0.8; }
       .ev-body h3 { margin-bottom: 4px; font-size: clamp(2.1rem, 4.6vw, 3.3rem); font-weight: 600; line-height: 1; }
       .ev-tag { margin-bottom: 14px; font-family: "Cormorant Garamond", serif; font-size: 1.24rem; font-style: italic; opacity: 0.92; }
       .ev-sig { max-width: 560px; opacity: 0.94; }
-      .ev-sig-hi { max-width: 560px; margin-top: 10px; opacity: 0.74; font-size: 0.95rem; }
+      .ev-sig-hi { max-width: 560px; margin-top: 10px; opacity: 0.74; font-size: 1rem; }
       .ev-dress { position: relative; display: grid; align-content: center; gap: 14px; padding: 32px 28px; border-left: 1px solid color-mix(in srgb, var(--ev-ink) 24%, transparent); background: color-mix(in srgb, var(--ev-ink) 18%, transparent); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ev-ink) 36%, transparent), inset 7px 0 0 color-mix(in srgb, var(--ev-ink) 58%, transparent); }
-      .ev-dress .lab { justify-self: start; display: inline-flex; align-items: center; gap: 9px; padding: 8px 16px; border: 1.5px solid color-mix(in srgb, var(--ev-ink) 72%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--ev-ink) 32%, transparent); font-size: 0.84rem; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; }
+      .ev-dress .lab { justify-self: start; display: inline-flex; align-items: center; gap: 9px; padding: 7px 16px 8px; border: 1.5px solid color-mix(in srgb, var(--ev-ink) 72%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--ev-ink) 32%, transparent); font-family: "Cormorant Garamond", serif; font-size: 1.12rem; font-weight: 700; font-style: italic; letter-spacing: 0.03em; }
       .ev-dress .lab svg { width: 17px; height: 17px; flex: none; }
-      .ev-dress strong { font-size: 1.34rem; line-height: 1.4; font-weight: 700; }
-      .ev-dress .dress-note { grid-column: 1 / -1; font-size: 1.04rem; font-weight: 600; line-height: 1.5; opacity: 0.96; }
+      .ev-dress strong { font-size: 1.3rem; line-height: 1.4; font-weight: 600; }
+      .ev-dress .dress-note { grid-column: 1 / -1; font-size: 1.08rem; font-weight: 600; line-height: 1.5; opacity: 0.96; }
       .swatches { display: flex; gap: 9px; flex-wrap: wrap; }
       .swatch { width: 30px; height: 30px; border-radius: 50%; border: 1px solid color-mix(in srgb, var(--ev-ink) 40%, transparent); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ev-bg) 55%, transparent); }
 
@@ -271,18 +252,18 @@
       /* ---------- venue ---------- */
       .venue { display: grid; grid-template-columns: 0.9fr 1.1fr; overflow: hidden; border: 1px solid var(--line); background: var(--card); box-shadow: var(--shadow); }
       .venue-art { position: relative; display: grid; place-items: center; min-height: 340px; overflow: hidden; background: linear-gradient(170deg, var(--maroon-700), var(--maroon-950)); color: var(--gold-300); }
-      .venue-art::before { content: ""; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 64%; height: 74%; border: 1px solid rgba(223, 192, 120, 0.5); border-bottom: 0; border-radius: 200px 200px 0 0; box-shadow: 0 0 0 16px rgba(223, 192, 120, 0.05); }
-      .venue-art::after { content: ""; position: absolute; left: 12%; right: 12%; bottom: 44px; height: 1px; background: rgba(223, 192, 120, 0.55); box-shadow: 0 -20px rgba(223, 192, 120, 0.16), 0 20px rgba(223, 192, 120, 0.16); }
+      .venue-art::before { content: ""; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 64%; height: 74%; border: 1px solid rgba(190, 146, 80, 0.5); border-bottom: 0; border-radius: 200px 200px 0 0; box-shadow: 0 0 0 16px rgba(190, 146, 80, 0.05); }
+      .venue-art::after { content: ""; position: absolute; left: 12%; right: 12%; bottom: 44px; height: 1px; background: rgba(190, 146, 80, 0.55); box-shadow: 0 -20px rgba(190, 146, 80, 0.16), 0 20px rgba(190, 146, 80, 0.16); }
       .venue-mark { position: relative; z-index: 1; text-align: center; }
       .venue-mark .vm-name { font-family: "Great Vibes", cursive; font-size: 3.4rem; line-height: 1; color: #fbeecb; }
-      .venue-mark .vm-sub { margin-top: 10px; font-size: 0.78rem; letter-spacing: 0.34em; text-transform: uppercase; text-indent: 0.34em; color: var(--gold-400); }
+      .venue-mark .vm-sub { margin-top: 10px; font-family: "Cormorant Garamond", serif; font-size: 1.05rem; font-weight: 600; font-style: italic; letter-spacing: 0.06em; color: var(--gold-300); }
       .venue-copy { padding: clamp(30px, 5vw, 56px); align-self: center; }
       .venue-copy h3 { margin-bottom: 8px; font-size: clamp(2.1rem, 4.4vw, 3rem); font-weight: 600; color: var(--maroon-800); }
       @media (prefers-color-scheme: dark) { .venue-copy h3 { color: var(--gold-300); } }
-      .venue-addr { margin-bottom: 8px; color: var(--ink-soft); font-size: 1.05rem; }
-      .venue-note { margin-bottom: 26px; color: var(--ink-soft); font-size: 0.98rem; }
+      .venue-addr { margin-bottom: 8px; color: var(--ink-soft); font-size: 1.1rem; }
+      .venue-note { margin-bottom: 26px; color: var(--ink-soft); font-size: 1.04rem; }
       .actions { display: flex; flex-wrap: wrap; gap: 10px; }
-      .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 11px 20px; border: 1px solid var(--maroon-700); background: var(--maroon-700); color: #fdf3dd; font: inherit; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; cursor: pointer; transition: filter 0.2s, transform 0.2s; }
+      .btn { min-height: 48px; display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 11px 20px; border: 1px solid var(--maroon-700); background: var(--maroon-700); color: #fdf3dd; font-family: "Jost", sans-serif; font-size: 0.98rem; font-weight: 500; letter-spacing: 0.03em; text-decoration: none; cursor: pointer; transition: filter 0.2s, transform 0.2s; }
       .btn:hover { filter: brightness(1.14); }
       .btn.ghost { background: transparent; color: var(--maroon-700); }
       @media (prefers-color-scheme: dark) { .btn.ghost { color: var(--gold-300); border-color: var(--gold-500); } }
@@ -291,20 +272,20 @@
 
       /* ---------- Lucknow guide ---------- */
       .guide-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(14px, 2.4vw, 22px); }
-      .place { padding: 24px 22px; background: var(--card); border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(74, 20, 28, 0.06); }
+      .place { padding: 24px 22px; background: var(--card); border: 1px solid var(--line); box-shadow: 0 14px 34px rgba(61, 11, 17, 0.06); }
       .place .p-ico { width: 34px; height: 34px; margin-bottom: 14px; color: var(--gold-600); }
       @media (prefers-color-scheme: dark) { .place .p-ico { color: var(--gold-400); } }
-      .place h3 { margin-bottom: 6px; font-size: 1.32rem; font-weight: 600; line-height: 1.15; color: var(--maroon-800); }
+      .place h3 { margin-bottom: 6px; font-size: 1.38rem; font-weight: 600; line-height: 1.15; color: var(--maroon-800); }
       @media (prefers-color-scheme: dark) { .place h3 { color: var(--gold-300); } }
-      .place p { margin: 0; color: var(--ink-soft); font-size: 0.94rem; line-height: 1.55; }
+      .place p { margin: 0; color: var(--ink-soft); font-size: 1.04rem; line-height: 1.5; }
       .food-band { margin-top: clamp(20px, 3.4vw, 32px); padding: clamp(26px, 4vw, 38px); background: linear-gradient(165deg, var(--maroon-800), var(--maroon-950)); color: #f7ead0; box-shadow: var(--shadow); position: relative; overflow: hidden; }
-      .food-band::before { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(223, 192, 120, 0.4); pointer-events: none; }
-      .food-band h3 { position: relative; margin-bottom: 4px; text-align: center; font-size: clamp(1.7rem, 3.6vw, 2.3rem); font-weight: 600; color: #fbeecb; }
-      .food-band .fb-sub { position: relative; text-align: center; color: #e3cfa3; margin-bottom: 26px; font-size: 0.98rem; }
+      .food-band::before { content: ""; position: absolute; inset: 9px; border: 1px solid rgba(190, 146, 80, 0.4); pointer-events: none; }
+      .food-band h3 { position: relative; margin-bottom: 4px; text-align: center; font-size: clamp(1.7rem, 3.6vw, 2.3rem); font-weight: 600; font-style: italic; color: #fbeecb; }
+      .food-band .fb-sub { position: relative; text-align: center; color: #e3cfa3; margin-bottom: 26px; font-size: 1.05rem; font-style: italic; }
       .food-grid { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(16px, 3vw, 28px); }
-      .food h4 { margin: 0 0 6px; font-family: "Cormorant Garamond", serif; font-size: 1.42rem; font-weight: 600; color: #fdf3dd; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-      .food p { margin: 0; color: #e8d9ba; font-size: 0.95rem; }
-      .veg-mark { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px 2px 5px; border: 1px solid #7bc98c; border-radius: 999px; background: rgba(28, 122, 55, 0.25); color: #bfe9c9; font-family: "Jost", sans-serif; font-size: 0.68rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; }
+      .food h4 { margin: 0 0 6px; font-family: "Cormorant Garamond", serif; font-size: 1.48rem; font-weight: 600; color: #fdf3dd; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+      .food p { margin: 0; color: #e8d9ba; font-size: 1.03rem; }
+      .veg-mark { display: inline-flex; align-items: center; gap: 6px; padding: 2px 9px 2px 5px; border: 1px solid #7bc98c; border-radius: 999px; background: rgba(28, 122, 55, 0.25); color: #bfe9c9; font-family: "Jost", sans-serif; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.05em; }
       .veg-mark i { width: 13px; height: 13px; border: 1.6px solid #8fe0a2; display: grid; place-items: center; flex: none; }
       .veg-mark i::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #8fe0a2; }
       .nonveg-mark { border-color: rgba(230, 160, 130, 0.7); background: rgba(150, 60, 30, 0.28); color: #f3cdb4; }
@@ -315,36 +296,36 @@
       .rsvp-wrap { max-width: 760px; margin-inline: auto; padding: clamp(28px, 4.6vw, 48px); background: var(--card); border: 1px solid var(--gold-500); box-shadow: var(--shadow); position: relative; }
       .rsvp-wrap::before { content: ""; position: absolute; inset: 6px; border: 1px solid var(--line); pointer-events: none; }
       .rsvp-form { position: relative; display: grid; gap: 20px; }
-      .field label { display: block; margin-bottom: 7px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--ink-soft); }
+      .field label { display: block; margin-bottom: 7px; font-family: "Jost", sans-serif; font-size: 0.92rem; font-weight: 500; letter-spacing: 0.02em; color: var(--ink-soft); }
       .field input[type="text"], .field input[type="tel"], .field input[type="number"], .field select, .field textarea {
-        width: 100%; padding: 13px 15px; font: inherit; font-size: 1rem; color: var(--ink);
+        width: 100%; padding: 13px 15px; font-family: "Jost", sans-serif; font-size: 1rem; color: var(--ink);
         background: var(--paper); border: 1px solid var(--line); border-radius: 2px;
       }
       .field textarea { min-height: 92px; resize: vertical; }
-      .field .err { display: none; margin-top: 6px; color: #b3352c; font-size: 0.88rem; }
+      .field .err { display: none; margin-top: 6px; color: #b3352c; font-family: "Jost", sans-serif; font-size: 0.9rem; }
       .field.invalid input { border-color: #b3352c; }
       .field.invalid .err { display: block; }
       .pills { display: flex; flex-wrap: wrap; gap: 9px; }
-      .pill { padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink); font: inherit; font-size: 0.92rem; font-weight: 500; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
+      .pill { padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink); font-family: "Jost", sans-serif; font-size: 0.94rem; font-weight: 500; cursor: pointer; transition: background 0.2s, color 0.2s, border-color 0.2s; }
       .pill[aria-pressed="true"] { background: var(--maroon-700); border-color: var(--maroon-700); color: #fdf3dd; }
       .btn[disabled] { opacity: 0.6; cursor: wait; }
-      .rsvp-error { display: none; margin: 0; padding: 14px 16px; border: 1px solid #b3352c; background: color-mix(in srgb, #b3352c 7%, var(--card)); color: var(--ink); font-size: 0.96rem; }
+      .rsvp-error { display: none; margin: 0; padding: 14px 16px; border: 1px solid #b3352c; background: color-mix(in srgb, #b3352c 7%, var(--card)); color: var(--ink); font-family: "Jost", sans-serif; font-size: 0.96rem; }
       .rsvp-error.show { display: block; }
       .rsvp-success { position: relative; display: none; text-align: center; padding: 14px 6px 6px; }
       .rsvp-success.show { display: block; }
-      .rsvp-success .tick { width: 64px; height: 64px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--gold-500); color: var(--gold-600); background: radial-gradient(circle at 50% 38%, rgba(199, 155, 69, 0.16), transparent 70%); }
+      .rsvp-success .tick { width: 64px; height: 64px; margin: 0 auto 18px; display: grid; place-items: center; border-radius: 50%; border: 1px solid var(--gold-500); color: var(--gold-600); background: radial-gradient(circle at 50% 38%, rgba(162, 116, 55, 0.16), transparent 70%); }
       @media (prefers-color-scheme: dark) { .rsvp-success .tick { color: var(--gold-400); } }
       .rsvp-success .tick svg { width: 30px; height: 30px; }
       .rsvp-success h3 { margin-bottom: 10px; font-size: clamp(1.7rem, 4.4vw, 2.15rem); font-weight: 600; line-height: 1.15; color: var(--maroon-800); }
       @media (prefers-color-scheme: dark) { .rsvp-success h3 { color: var(--gold-300); } }
       .rsvp-success p { max-width: 470px; margin: 0 auto; color: var(--ink-soft); }
 
-      .toast { position: fixed; z-index: 80; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translate(-50%, 18px); max-width: calc(100% - 36px); padding: 12px 20px; background: var(--maroon-900); color: #fdf3dd; border: 1px solid var(--gold-500); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; font-size: 0.95rem; }
+      .toast { position: fixed; z-index: 80; left: 50%; bottom: max(24px, env(safe-area-inset-bottom)); transform: translate(-50%, 18px); max-width: calc(100% - 36px); padding: 12px 20px; background: var(--maroon-900); color: #fdf3dd; border: 1px solid var(--gold-500); box-shadow: var(--shadow); opacity: 0; pointer-events: none; transition: opacity 0.25s ease, transform 0.25s ease; font-family: "Jost", sans-serif; font-size: 0.95rem; }
       .toast.show { opacity: 1; transform: translate(-50%, 0); }
 
       /* ---------- background music toggle ---------- */
       .music-btn {
-        position: fixed; z-index: 70; top: 88px; right: 18px;
+        position: fixed; z-index: 70; top: 18px; right: 18px;
         width: 52px; height: 52px; border-radius: 50%; padding: 0;
         display: grid; place-items: center; cursor: pointer;
         background: radial-gradient(circle at 50% 35%, var(--maroon-700), var(--maroon-950));
@@ -363,8 +344,8 @@
         0%, 100% { box-shadow: 0 12px 30px rgba(46, 8, 18, 0.35), inset 0 0 0 3px rgba(223, 192, 120, 0.14), 0 0 0 0 rgba(199, 155, 69, 0.45); }
         50% { box-shadow: 0 12px 30px rgba(46, 8, 18, 0.35), inset 0 0 0 3px rgba(223, 192, 120, 0.14), 0 0 0 12px rgba(199, 155, 69, 0); }
       }
-      @media (max-width: 600px) { .music-btn { top: 128px; right: 16px; width: 48px; height: 48px; } }
-      .music-credit { margin: 64px auto 0; text-align: center; color: var(--ink-soft); font-size: 0.74rem; opacity: 0.8; }
+      @media (max-width: 600px) { .music-btn { top: 16px; right: 16px; width: 48px; height: 48px; } }
+      .music-credit { margin: 64px auto 0; text-align: center; color: var(--ink-soft); font-family: "Jost", sans-serif; font-size: 0.78rem; opacity: 0.8; }
       .music-credit a { text-decoration: underline; text-underline-offset: 2px; }
 
       /* ---------- reveals ---------- */
@@ -390,11 +371,10 @@
         .food-grid { grid-template-columns: 1fr; }
       }
       @media (max-width: 600px) {
-        body { font-size: 16.5px; }
+        body { font-size: 17.5px; }
         .shell { width: calc(100% - 24px); }
-        .nav { gap: 6px 16px; padding: 11px 8px; }
-        .nav a { font-size: 0.74rem; }
-        .hero { margin-top: 14px; box-shadow: var(--shadow), inset 0 0 0 6px var(--maroon-900), inset 0 0 0 7px rgba(223, 192, 120, 0.55); }
+        .hero { margin-top: 14px; box-shadow: var(--shadow), inset 0 0 0 6px var(--maroon-900), inset 0 0 0 7px rgba(190, 146, 80, 0.55); }
+        .medallion { width: 164px; }
         .countdown-grid { grid-template-columns: repeat(2, 1fr); }
         .guide-grid { grid-template-columns: 1fr; }
         .event { grid-template-columns: 1fr; }
@@ -417,47 +397,94 @@
     <div class="frame-line left" aria-hidden="true"></div>
     <div class="frame-line right" aria-hidden="true"></div>
 
-    <nav class="nav" aria-label="Page sections">
-      <a href="#families">Families</a>
-      <a href="#celebrations">Celebrations</a>
-      <a href="#venue">The Aviyaan</a>
-      <a href="#rsvp">RSVP</a>
-      <a href="#lucknow">Lucknow Guide</a>
-    </nav>
-
     <main class="shell">
       <!-- ================= HERO ================= -->
       <header class="hero">
         <div class="hero-arch" aria-hidden="true"></div>
         <div class="hero-glow" aria-hidden="true"></div>
         <div class="medallion" aria-hidden="true">
-          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-            <!-- Ganesh ji, seated on a lotus -->
-            <circle cx="32" cy="4.4" r="1.5" fill="currentColor" stroke="none" />
-            <path d="M26.2 14.2 L28.8 6.2 L32 10.6 L35.2 6.2 L37.8 14.2" />
-            <path d="M26 16.6 C29 15.2 35 15.2 38 16.6" />
-            <path d="M30.8 16.9 C30.8 19.5 33.2 19.5 33.2 16.9" />
-            <path d="M25.2 15.5 C18.5 11.8 12.8 13.8 12.2 19.2 C11.8 24.3 14.8 28 19.2 29.2" />
-            <path d="M38.8 15.5 C45.5 11.8 51.2 13.8 51.8 19.2 C52.2 24.3 49.2 28 44.8 29.2" />
-            <path d="M21.5 17.6 C17.6 15.9 15.1 17.3 15.3 20.8 C15.5 23.8 17.3 25.8 19.8 26.4" />
-            <path d="M42.5 17.6 C46.4 15.9 48.9 17.3 48.7 20.8 C48.5 23.8 46.7 25.8 44.2 26.4" />
-            <path d="M25.2 15.5 C24.6 21.5 26.4 25.8 29.6 27.8" />
-            <path d="M38.8 15.5 C39.4 21.5 37.6 25.8 34.4 27.8" />
-            <circle cx="28.2" cy="20.8" r="1.05" fill="currentColor" stroke="none" />
-            <circle cx="35.8" cy="20.8" r="1.05" fill="currentColor" stroke="none" />
-            <path d="M27.2 26.2 L25.9 29.6" />
-            <path d="M36.8 26.2 L38.1 29.6" />
-            <path d="M32 23.8 C32.6 28.4 31.4 32 28.2 34.4 C25.4 36.5 21.9 35.4 21.7 32.6 C21.6 30.7 23 29.4 24.7 29.5 C26 29.6 26.9 30.5 26.8 31.7" />
-            <path d="M23.8 33.5 C21.8 39.8 25.2 44.8 32 44.8 C38.8 44.8 42.2 39.8 40.2 33.5" />
-            <path d="M23.5 34.5 C19.5 36 17.2 39.2 17.4 43" />
-            <path d="M40.5 34.5 C44.5 36 46.8 39.2 46.6 43" />
-            <!-- lotus pedestal -->
-            <path d="M32 57 C28.6 53.4 28.6 49.8 32 46.8 C35.4 49.8 35.4 53.4 32 57 Z" />
-            <path d="M24.8 56.2 C22.2 52.8 22.4 49.6 25 48 C27.2 50.2 27.2 53.4 24.8 56.2 Z" />
-            <path d="M39.2 56.2 C41.8 52.8 41.6 49.6 39 48 C36.8 50.2 36.8 53.4 39.2 56.2 Z" />
-            <path d="M17.8 55 C16 52 16.6 49.4 18.8 48.2 C20.4 50.2 20.2 52.8 17.8 55 Z" />
-            <path d="M46.2 55 C48 52 47.4 49.4 45.2 48.2 C43.6 50.2 43.8 52.8 46.2 55 Z" />
-            <path d="M14.5 58.8 C23 61.4 41 61.4 49.5 58.8" />
+          <svg viewBox="0 0 200 246" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <defs>
+              <path id="hpetal" stroke-width="1.5" d="M0 0 C4.5 -4.5 5.5 -10.5 0 -16.5 C-5.5 -10.5 -4.5 -4.5 0 0 Z M0 -4 C1.6 -6.4 1.6 -9.8 0 -12.6" />
+            </defs>
+            <!-- finial above the pointed arch -->
+            <g stroke-width="1.7">
+              <path d="M100 1 C103.2 6.5 103.4 11.5 100 16.5 C96.6 11.5 96.8 6.5 100 1 Z" />
+              <path d="M87.5 13.5 C90.5 8.5 94.5 5.8 98.5 5.2" />
+              <path d="M112.5 13.5 C109.5 8.5 105.5 5.8 101.5 5.2" />
+            </g>
+            <!-- lotus-petal sunburst halo -->
+            <use href="#hpetal" transform="translate(119.5 36.6) rotate(20)" />
+            <use href="#hpetal" transform="translate(136.6 49.8) rotate(40)" />
+            <use href="#hpetal" transform="translate(149.4 70) rotate(60)" />
+            <use href="#hpetal" transform="translate(156.1 94.8) rotate(80)" />
+            <use href="#hpetal" transform="translate(156.1 121.2) rotate(100)" />
+            <use href="#hpetal" transform="translate(149.4 146) rotate(120)" />
+            <use href="#hpetal" transform="translate(136.6 166.2) rotate(140)" />
+            <use href="#hpetal" transform="translate(119.5 179.4) rotate(160)" />
+            <use href="#hpetal" transform="translate(80.5 36.6) rotate(-20)" />
+            <use href="#hpetal" transform="translate(63.4 49.8) rotate(-40)" />
+            <use href="#hpetal" transform="translate(50.6 70) rotate(-60)" />
+            <use href="#hpetal" transform="translate(43.9 94.8) rotate(-80)" />
+            <use href="#hpetal" transform="translate(43.9 121.2) rotate(-100)" />
+            <use href="#hpetal" transform="translate(50.6 146) rotate(-120)" />
+            <use href="#hpetal" transform="translate(63.4 166.2) rotate(-140)" />
+            <use href="#hpetal" transform="translate(80.5 179.4) rotate(-160)" />
+            <!-- medallion outline: pointed scalloped arch, tapering below -->
+            <path stroke-width="2.1" d="M100 18 C114 52 154 66 154 110 C154 152 130 176 100 198 C70 176 46 152 46 110 C46 66 86 52 100 18 Z" />
+            <!-- beaded inner ring -->
+            <path stroke-width="2.6" stroke-dasharray="0.1 5" d="M100 18 C114 52 154 66 154 110 C154 152 130 176 100 198 C70 176 46 152 46 110 C46 66 86 52 100 18 Z" transform="translate(100 108) scale(0.925) translate(-100 -108)" />
+            <!-- Ganesh ji: fine single-weight lines -->
+            <g stroke-width="2">
+              <!-- crown -->
+              <path d="M100 43.5 C102.2 47 102.2 50.2 100 53.5 C97.8 50.2 97.8 47 100 43.5 Z" />
+              <path d="M87 66.5 C88 55.5 93 49.8 100 49.2 C107 49.8 112 55.5 113 66.5" />
+              <path d="M93.5 57.5 C95.3 55.6 97.4 54.7 100 54.7 C102.6 54.7 104.7 55.6 106.5 57.5" />
+              <path d="M85 69.5 C92 65.8 108 65.8 115 69.5" />
+              <!-- face -->
+              <path d="M85 71.5 C83 84.5 84 95.5 89 102.5" />
+              <path d="M115 71.5 C117 84.5 116 95.5 111 102.5" />
+              <path d="M96.8 77.5 C96.8 82.8 103.2 82.8 103.2 77.5" />
+              <path d="M89.5 88.5 C91.5 86.8 94.5 86.8 96.3 88.3" />
+              <path d="M103.7 88.3 C105.5 86.8 108.5 86.8 110.5 88.5" />
+              <!-- ears -->
+              <path d="M84 76 C72 67 59 71 58 82 C57 93 65 102 76 104" />
+              <path d="M79 82 C71 77 64.5 80.5 64.8 87 C65 93 70.5 97 76 97.5" />
+              <path d="M116 76 C128 67 141 71 142 82 C143 93 135 102 124 104" />
+              <path d="M121 82 C129 77 135.5 80.5 135.2 87 C135 93 129.5 97 124 97.5" />
+              <!-- trunk, curling with a spiral tip -->
+              <path d="M91 100 C89.5 115 92 129 100 137.5 C107 145 118 147 123.5 141.5 C128 137 126.5 129.5 120.5 128.5 C115.5 127.7 111.5 131 112.3 135.5" />
+              <path d="M109 100 C109.5 112 112 121.5 117.5 127" />
+              <path d="M89.5 103.5 L87 109.5" />
+              <path d="M110.5 103.5 L113 109.5" />
+              <!-- right hand raised in blessing -->
+              <path d="M87 106 C78 107.5 71 112 68 119" />
+              <path d="M69.5 121.5 C61.5 122 56.5 116 57 107.5 L57.3 99.8 C57.4 97 60.3 96.7 61 99.5 L61.6 94.9 C61.9 92.4 65 92.5 65.3 95.2 L66 93.9 C66.6 91.6 69.6 92.1 69.9 94.7 L70.4 100.2 C72.8 98.5 75.6 100.5 75 104.7 C74.4 111.2 73 117.8 69.5 121.5 Z" />
+              <circle cx="65.5" cy="108" r="1.5" fill="currentColor" stroke="none" />
+              <!-- left hand holding a lotus bud -->
+              <path d="M113 106 C122 107.5 129.5 111.5 133 118" />
+              <path d="M130.5 120.5 C133.5 125.5 141 126 144.5 121.5" />
+              <path d="M137.5 95.5 C140.8 100.5 140.8 106 137.5 111 C134.2 106 134.2 100.5 137.5 95.5 Z" />
+              <path d="M131 101.5 C134 102.5 136 105 136.8 108.5" />
+              <path d="M144 101.5 C141 102.5 139 105 138.2 108.5" />
+              <path d="M137.5 111 C137.3 114.5 137 117.5 136 120.5" />
+              <!-- belly and seated legs, drawn as flowing loops -->
+              <path d="M88 110 C84.5 124 87 138 100 142.5 C113 138 115.5 124 112 110" />
+              <path d="M95 141 C82 149.5 64 148.5 58 137.5 C53.5 129 59.5 119.5 69.5 120.5 C77.5 121.3 82 127.5 80.5 134.5" />
+              <path d="M105 141 C118 149.5 136 148.5 142 137.5 C146.5 129 140.5 119.5 130.5 120.5 C122.5 121.3 118 127.5 119.5 134.5" />
+              <path d="M100 143.5 C97 151 92 155.5 85 158" />
+              <path d="M100 143.5 C103 151 108 155.5 115 158" />
+            </g>
+            <!-- hanging flourish pendant -->
+            <g stroke-width="1.7">
+              <circle cx="100" cy="203.5" r="1.5" fill="currentColor" stroke="none" />
+              <path d="M100 209 C93 200 80 199.5 79 208 C78.2 214.5 85.5 218 91.5 214.5 C95 212.5 98 210 100 206.5" />
+              <path d="M100 209 C107 200 120 199.5 121 208 C121.8 214.5 114.5 218 108.5 214.5 C105 212.5 102 210 100 206.5" />
+              <path d="M100 207 C102.5 211 102.5 215 100 218.5 C97.5 215 97.5 211 100 207 Z" />
+              <path d="M100 219 L100 225" />
+              <path d="M100 225 L103 230 L100 235 L97 230 Z" />
+              <circle cx="100" cy="240" r="1.4" fill="currentColor" stroke="none" />
+            </g>
           </svg>
         </div>
         <p class="shubh">Shubh Vivah</p>
