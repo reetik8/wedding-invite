@@ -96,7 +96,7 @@
       /* ---------- hero ---------- */
       .hero {
         position: relative; overflow: hidden; text-align: center;
-        margin-top: 26px; padding: clamp(56px, 9vw, 104px) clamp(22px, 6vw, 80px) clamp(64px, 9vw, 110px);
+        margin-top: 12px; padding: clamp(28px, 4.5vw, 52px) clamp(22px, 6vw, 80px) clamp(64px, 9vw, 110px);
         background:
           radial-gradient(720px 340px at 50% -60px, rgba(217, 188, 127, 0.2), transparent 62%),
           radial-gradient(900px 600px at 50% 118%, rgba(0, 0, 0, 0.35), transparent 60%),
@@ -120,7 +120,7 @@
       }
       @keyframes glowPulse { 0%, 100% { opacity: 0.55; transform: translateX(-50%) scale(0.94); } 50% { opacity: 1; transform: translateX(-50%) scale(1.06); } }
       .medallion {
-        position: relative; width: 188px; margin: 0 auto 26px;
+        position: relative; width: 136px; margin: 0 auto 20px;
         animation: medallionFloat 7s ease-in-out infinite;
         filter: drop-shadow(0 0 24px rgba(217, 188, 127, 0.28));
       }
@@ -484,11 +484,11 @@
         <p class="shubh">Shubh Vivah</p>
         <p class="hero-blessing">With the blessings of our families, we joyfully invite you to celebrate the wedding of</p>
         <h1 class="hero-names">Reetik <span class="amp">&amp;</span> Isha</h1>
+      <p class="scroll-hint">Scroll to celebrate</p>
         <div class="hero-rule" aria-hidden="true"><span class="dia"></span></div>
         <p class="hero-dates">17<span class="dot">·</span>18</p>
         <p class="hero-month">January 2027</p>
         <p class="hero-venue"><strong>The Aviyaan</strong><br />IIM Road, Lucknow</p>
-        <p class="scroll-hint">Scroll to celebrate</p>
       </header>
 
       <!-- ================= COUNTDOWN ================= -->
@@ -517,14 +517,14 @@
             <p class="who">The Groom</p>
             <h3>Reetik Chandra</h3>
             <p>Grandson of <strong>Late Smt. Kusum Saxena</strong> &amp; <strong>Late Dr. Devendra Chandra</strong></p>
-            <p>and <strong>Smt. Shail Srivastava</strong> &amp; <strong>Late Shri Sushil K. Srivastava</strong></p>
+            <p>and <strong>Smt. Shail Srivastava</strong> &amp; <strong>Late Sushil K. Srivastava</strong></p>
             <p>Son of <strong>Smt. Renu Chandra</strong> &amp; <strong>Late Dr. Deepak Chandra</strong></p>
             <p>Brother of <strong>Shri Rishi Chandra</strong> &amp; <strong>Smt. Divyanshi Srivastava</strong></p>
           </article>
           <article class="family-card rv rv-right">
             <p class="who">The Bride</p>
             <h3>Isha Saxena</h3>
-            <p>Granddaughter of <strong>Late Smt. Shanti Devi</strong> &amp; <strong>Late Shri Naresh Chandra Verma</strong></p>
+            <p>Granddaughter of <strong>Late Smt. Shanti Devi</strong> &amp; <strong>Late Naresh Chandra Verma</strong></p>
             <p>Daughter of <strong>Smt. Neeta Saxena</strong> &amp; <strong>Shri Kanchan Kumar Saxena</strong></p>
             <p>Sister of <strong>Shri Prince Saxena</strong></p>
           </article>
@@ -690,10 +690,10 @@
               <label id="ev-label">Celebrations you'll attend</label>
               <div class="pills" role="group" aria-labelledby="ev-label">
                 <button type="button" class="pill" data-ev="All events" data-gform="All events (17–18 Jan)" aria-pressed="true">All events</button>
-                <button type="button" class="pill" data-ev="Shagun Ki Subah (Tilak &amp; Godbharai, 17 Jan)" data-gform="Shagun Ki Subah — Tilak &amp; Godbharai (17 Jan, noon)" aria-pressed="false">Shagun Ki Subah · Tilak &amp; Godbharai, 17 Jan</button>
-                <button type="button" class="pill" data-ev="Jashn Ki Raat (Sangeet, 17 Jan)" data-gform="Jashn Ki Raat — Sangeet (17 Jan, 7 PM)" aria-pressed="false">Jashn Ki Raat · Sangeet, 17 Jan</button>
-                <button type="button" class="pill" data-ev="Rangon Ki Bahar (Haldi, 18 Jan)" data-gform="Rangon Ki Bahar — Haldi (18 Jan, noon)" aria-pressed="false">Rangon Ki Bahar · Haldi, 18 Jan</button>
-                <button type="button" class="pill" data-ev="Rasm-e-Ishq (Wedding, 18 Jan)" data-gform="Rasm-e-Ishq — Wedding Ceremony (18 Jan, 7 PM)" aria-pressed="false">Rasm-e-Ishq · Wedding, 18 Jan</button>
+                <button type="button" class="pill" data-ev="Shagun Ki Subah (Tilak &amp; Godbharai, 17 Jan)" data-gform="Shagun Ki Subah — Tilak &amp; Godbharai (17 Jan, noon)" aria-pressed="false">Tilak &amp; Godbharai</button>
+                <button type="button" class="pill" data-ev="Jashn Ki Raat (Sangeet, 17 Jan)" data-gform="Jashn Ki Raat — Sangeet (17 Jan, 7 PM)" aria-pressed="false">Sangeet</button>
+                <button type="button" class="pill" data-ev="Rangon Ki Bahar (Haldi, 18 Jan)" data-gform="Rangon Ki Bahar — Haldi (18 Jan, noon)" aria-pressed="false">Haldi</button>
+                <button type="button" class="pill" data-ev="Rasm-e-Ishq (Wedding, 18 Jan)" data-gform="Rasm-e-Ishq — Wedding Ceremony (18 Jan, 7 PM)" aria-pressed="false">Wedding</button>
               </div>
             </div>
             <div class="field">
@@ -761,35 +761,54 @@
             <h3>Gomti Riverfront</h3>
             <p>A long, landscaped promenade along the river — lovely for an evening stroll, musical fountains, and a breather between functions.</p>
           </article>
-          <article class="place rv d3">
-            <svg class="p-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M4 21h16M6 21V10m12 11V10M6 10l6-6 6 6M10 21v-5h4v5" /></svg>
-            <h3>Ambedkar Memorial Park</h3>
-            <p>A monumental park of red sandstone and bronze statues — striking at sunset, when the stone turns the colour of the wedding itself.</p>
+          <article class="place rv">
+            <svg class="p-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/></svg>
+            <h3>Lulu Mall Game Zone</h3>
+            <p>Arcade games and fun activities for a playful break between the wedding functions.</p>
           </article>
+
+          
         </div>
 
         <div class="food-band rv">
-          <h3>Taste of Lucknow</h3>
-          <p class="fb-sub">Three tables no visit is complete without</p>
+          <h3>Taste and Enjoy Lucknow</h3>
+          <p class="fb-sub">A few local favourites to try between the festivities</p>
           <div class="food-grid">
             <div class="food">
               <h4>Tunday Kababi <span class="veg-mark nonveg-mark"><i aria-hidden="true"></i>Non-veg</span></h4>
-              <p>The legendary galouti kebabs of Aminabad — so soft they were created for a toothless nawab, and still melt before you can chew. Pair with sheermal or ulte tawa paratha.</p>
+              <p>The legendary galouti kebabs of Aminabad — so soft they were created for a toothless nawab, and still melt before you can chew.</p>
             </div>
             <div class="food">
               <h4>Royal Cafe <span class="veg-mark"><i aria-hidden="true"></i>Veg friendly</span></h4>
-              <p>Hazratganj's famous basket chaat — a crisp edible basket piled with spiced potatoes, chutneys and dahi. Messy, joyful, unmissable.</p>
+              <p>Hazratganj's famous basket chaat — a crisp edible basket piled with spiced potatoes, chutneys and dahi.</p>
             </div>
             <div class="food">
               <h4>Prakash Kulfi <span class="veg-mark"><i aria-hidden="true"></i>Veg friendly</span></h4>
-              <p>Dense, slow-cooked kulfi falooda from Aminabad, served the old way. The perfect sweet ending to a Chowk wander.</p>
-            </div>
-          </div>
+              <p>Dense, slow-cooked kulfi falooda from Aminabad, served the old way.</p>
+ </div>
+ <div class="food">
+ <h4>Motimahal &amp; Chettichand</h4>
+ <p>Good places to eat while exploring Hazratganj; dishes to try there include makhan malai, rabdi and Nainital momos.</p>
+ </div>
+ <div class="food">
+ <h4>Kanchan Sweets</h4>
+ <p>Delicious sweets and pani puri.</p>
+ </div>
+ <div class="food">
+ <h4>Dastarkhwan</h4>
+ <p>A popular Lucknow place to eat.</p>
+ </div>
+ <div class="food">
+ <h4>Idris Biryani</h4>
+ <p>A popular biryani spot.</p>
+ </div>
         </div>
+      </div>
       </section>
 
-    </main>
 
+      </main>
+    
     <button class="music-btn" id="music-btn" type="button" aria-pressed="false" aria-label="Play background music" title="Play the music">
       <svg class="ico-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18.5V5.8L21 3.5v13" /><circle cx="6.2" cy="18.5" r="2.8" /><circle cx="18.2" cy="16.5" r="2.8" /></svg>
       <svg class="ico-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18.5V5.8L21 3.5v13" /><circle cx="6.2" cy="18.5" r="2.8" /><circle cx="18.2" cy="16.5" r="2.8" /><path d="M14.8 8.2a4.4 4.4 0 0 1 0 4.6" opacity="0.75" /></svg>
